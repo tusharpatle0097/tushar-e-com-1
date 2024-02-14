@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useContext} from "react";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/orebiSlice";
-
+import { DarkModeContext } from "../../../context/DarkModeContext";
 const ProductInfo = ({ productInfo }) => {
+  const { isDarkMode, toggleDarkMode } = useContext(DarkModeContext);
+
   const dispatch = useDispatch();
   return (
     <div className="flex flex-col gap-5 ">
@@ -27,7 +29,7 @@ const ProductInfo = ({ productInfo }) => {
             })
           )
         }
-        className="w-full py-4 bg-primeColor hover:bg-black duration-300 text-white text-lg font-titleFont"
+        className={`w-full ${isDarkMode?'bg-orange-200 text-black':'text-white'} w-52 h-10 bg-primeColor  bg-black flex justify-center items-center text-base font-semibold hover:bg-yellow-600 duration-300 cursor-pointer`}
       >
         Add to Cart
       </button>

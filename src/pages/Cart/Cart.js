@@ -96,7 +96,7 @@ const Cart = () => {
               </div>
               <div className="flex justify-end">
                 <Link to="/paymentgateway">
-                  <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">
+                  <button className={`w-52 ${isDarkMode?'bg-orange-200 text-black':'text-white'} w-52 h-10 bg-primeColor  bg-black flex justify-center items-center text-base font-semibold hover:bg-yellow-600 duration-300 cursor-pointer`}>
                     Proceed to Checkout
                   </button>
                 </Link>

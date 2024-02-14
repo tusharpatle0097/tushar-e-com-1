@@ -23,7 +23,7 @@ const Journal = () => {
           </span> 
         </h1>
         <Link to="/shop">
-          <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">
+          <button className= {`w-44 ${isDarkMode?'bg-orange-200 text-black':'text-white'} w-52 h-10 bg-primeColor  bg-black flex justify-center items-center text-base font-semibold hover:bg-yellow-600 duration-300 cursor-pointer`}>
             Continue Shopping
           </button>
         </Link>

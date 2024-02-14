@@ -135,7 +135,8 @@ const Contact = () => {
             </div>
             <button
               onClick={handlePost}
-              className="w-44 bg-primeColor text-gray-200 h-10 font-titleFont text-base tracking-wide font-semibold hover:bg-black hover:text-white duration-200"
+              className=
+              {`w-44 ${isDarkMode?'bg-orange-200 text-black':'text-white'} w-52 h-10 bg-primeColor  bg-black flex justify-center items-center text-base font-semibold hover:bg-yellow-600 duration-300 cursor-pointer`}
             >
               Post
             </button>

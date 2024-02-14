@@ -2,7 +2,7 @@ import React from "react";
 
 const ShopNow = () => {
   return (
-    <button className="bg-primeColor text-white text-lg font-bodyFont w-[185px] h-[50px] hover:bg-black duration-300 font-bold">
+    <button className="w-[185px] h-[50px] bg-primeColor  bg-black text-white flex justify-center items-center text-base font-semibold hover:bg-yellow-600 duration-300 cursor-pointer">
       Shop Now
     </button>
   );
